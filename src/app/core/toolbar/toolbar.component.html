@@ -1,0 +1,58 @@
+<mat-toolbar>
+
+  <span>Médicos do Humor</span>
+  <span class="example-spacer"></span>
+  <!--region trigger menu_sobre-->
+  <button mat-button [matMenuTriggerFor]="menuSobre" aria-label="Example icon-button with a menu">
+    <mat-icon>info</mat-icon>
+    <span>Sobre</span>
+  </button>
+  <!--endregion trigger menu_sobre-->
+
+  <!--region trigger menu_faça_parte-->
+  <button mat-button [matMenuTriggerFor]="menuFacaParte" aria-label="Example icon-button with a menu">
+    <mat-icon>volunteer_activism</mat-icon>
+    <span>Faça Parte</span>
+  </button>
+  <!--endregion trigger menu_faça_parte-->
+
+  <!--region menu_sobre-->
+  <mat-menu #menuSobre="matMenu">
+    <button mat-menu-item>
+      <mat-icon>groups</mat-icon>
+      <span>Os Voluntários</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>local_hospital</mat-icon>
+      <span>Onde atuamos</span>
+    </button>
+  </mat-menu>
+  <!--endregion menu_sobre-->
+
+  <!--region menu_faça_parte-->
+  <mat-menu #menuFacaParte="matMenu">
+    <button mat-menu-item>
+      <mat-icon>group_add</mat-icon>
+      <span>Programa de Voluntários</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>business_center</mat-icon>
+      <span>Seja um Patrocinador Oficial</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>volunteer_activism</mat-icon>
+      <span>Doe</span>
+    </button>
+  </mat-menu>
+  <!--endregion menu_faça_parte-->
+
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"
+          onclick="window.open('https://www.instagram.com/medicosdohumor', '_blank')">
+    <mat-icon>share</mat-icon>
+  </button>
+
+</mat-toolbar>

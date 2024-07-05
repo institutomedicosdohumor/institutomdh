@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "insitutomdh": {
+    "institutomdh": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/insitutomdh",
+            "outputPath": "dist/institutomdh",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "insitutomdh:build:production"
+              "buildTarget": "institutomdh:build:production"
             },
             "development": {
-              "buildTarget": "insitutomdh:build:development"
+              "buildTarget": "institutomdh:build:development"
             }
           },
           "defaultConfiguration": "development"
