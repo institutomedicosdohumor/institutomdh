@@ -3,18 +3,26 @@
   <span>Médicos do Humor</span>
   <span class="example-spacer"></span>
   <!--region trigger menu_sobre-->
-  <button mat-button [matMenuTriggerFor]="menuSobre" aria-label="Example icon-button with a menu">
+  <button [matMenuTriggerFor]="menuSobre" aria-label="Example icon-button with a menu" mat-button>
     <mat-icon>info</mat-icon>
     <span>Sobre</span>
   </button>
   <!--endregion trigger menu_sobre-->
 
   <!--region trigger menu_faça_parte-->
-  <button mat-button [matMenuTriggerFor]="menuFacaParte" aria-label="Example icon-button with a menu">
+  <button [matMenuTriggerFor]="menuFacaParte" aria-label="Example icon-button with a menu" mat-button>
     <mat-icon>volunteer_activism</mat-icon>
     <span>Faça Parte</span>
   </button>
   <!--endregion trigger menu_faça_parte-->
+
+  <!--region menu_blog-->
+  <button [routerLink]="['/blog']" aria-label="Example icon-button with a menu" mat-button>
+    <mat-icon>article</mat-icon>
+    <span>Blog</span>
+  </button>
+  <!--endregion menu_blog-->
+
 
   <!--region menu_sobre-->
   <mat-menu #menuSobre="matMenu">
@@ -47,10 +55,10 @@
   <!--endregion menu_faça_parte-->
 
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+  <button aria-label="Example icon-button with heart icon" class="example-icon favorite-icon" mat-icon-button>
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"
+  <button aria-label="Example icon-button with share icon" class="example-icon" mat-icon-button
           onclick="window.open('https://www.instagram.com/medicosdohumor', '_blank')">
     <mat-icon>share</mat-icon>
   </button>
